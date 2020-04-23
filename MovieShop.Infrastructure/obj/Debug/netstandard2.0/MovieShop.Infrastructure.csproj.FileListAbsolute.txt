@@ -1,0 +1,9 @@
+C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\bin\Debug\netstandard2.0\MovieShop.Infrastructure.deps.json
+C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\bin\Debug\netstandard2.0\MovieShop.Infrastructure.dll
+C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\bin\Debug\netstandard2.0\MovieShop.Infrastructure.pdb
+C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\obj\Debug\netstandard2.0\MovieShop.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\obj\Debug\netstandard2.0\MovieShop.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\obj\Debug\netstandard2.0\MovieShop.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\obj\Debug\netstandard2.0\MovieShop.Infrastructure.AssemblyInfo.cs
+C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\obj\Debug\netstandard2.0\MovieShop.Infrastructure.dll
+C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\obj\Debug\netstandard2.0\MovieShop.Infrastructure.pdb
