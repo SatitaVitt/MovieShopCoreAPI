@@ -11,6 +11,7 @@ namespace MovieShop.Core.ServiceInterfaces
         Task<IEnumerable<Movie>> GetTopGrossingMovies();
         Task<Movie> GetMovieById(int id);
         Task<IEnumerable<Movie>> GetMoviesByCast(int castId);
+        Task<IEnumerable<Movie>> GetMoviesByGenre(int genreId);
 
     }
 }

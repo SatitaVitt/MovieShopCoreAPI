@@ -6,7 +6,7 @@ C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\bin\Debug\netsta
 C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\bin\Debug\netstandard2.1\MovieShop.Infrastructure.dll
 C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\bin\Debug\netstandard2.1\MovieShop.Infrastructure.pdb
 C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\bin\Debug\netstandard2.1\MovieShop.Core.pdb
-C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\obj\Debug\netstandard2.1\MovieShop.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\obj\Debug\netstandard2.1\MovieShop.Infrastructure.csproj.CopyComplete
 C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\obj\Debug\netstandard2.1\MovieShop.Infrastructure.dll
 C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\obj\Debug\netstandard2.1\MovieShop.Infrastructure.pdb
+C:\Users\Satita\source\repos\MovieShop\MovieShop.Infrastructure\obj\Debug\netstandard2.1\MovieShop.Infrastructure.csproj.CoreCompileInputs.cache

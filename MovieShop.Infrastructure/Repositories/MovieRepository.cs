@@ -28,6 +28,11 @@ namespace MovieShop.Infrastructure.Repositories
             var movie = await _dbContext.Movies.OrderByDescending(m => m.Revenue).Take(50).ToListAsync();
             return movie;
         }
+        public async Task<IEnumerable<Movie>> GetMoviesByGenre(int genreId)
+        {
+            var movies = await _dbContext.MovieGenres.Where(mc => mc.GenreId == genreId).Include(c => c.Movie).Select(m => m.Movie).ToListAsync();
+            return movies;
+        }
 
 
     }

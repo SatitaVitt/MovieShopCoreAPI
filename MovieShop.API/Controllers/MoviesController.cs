@@ -41,5 +41,22 @@ namespace MovieShop.API.Controllers
             var movies = await _movieService.GetMoviesByCast(castId);
             return Ok(movies);
         }
+
+        [HttpGet]
+        [Route("genre/{genreid}/{page:int?}")]
+        public async Task<IActionResult> GetAllMoviesByGenre(int genreId, int? page = 1)
+        {
+            var movies = await _movieService.GetMoviesByGenre(genreId);
+            return Ok(movies);
+            /*
+            var movies = await _movieRepository.GetMoviesByGenre(Utility.GetGenreById(genreId));
+            var response = movies != null
+                ? Request.CreateResponse(HttpStatusCode.OK,
+                    AutoMapper.Mapper.Map<IList<SearchMovie>, IList<Movie>>(movies.Results)
+                )
+                : Request.CreateResponse(HttpStatusCode.NotFound, "No Movies were found");
+            return ResponseMessage(response);
+            */
+        }
     }
 }

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "B5OjrY5pGzD9Jo32s/iFOfB2yfz290hQPYP4Q+Md1kcYPIoSYIkLAuYNqO5v2MuVOTPz2gyyWut4wb5mLvVVgQ==",
+  "dgSpecHash": "1uFBGbX4wjCF8wxGGSVLFov5RdFG4QYUw646MHnPDuxABgs0EL7/Pf4usw60XmjzMxRsCGqN2yAql0CuL8pArw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Satita\\source\\repos\\MovieShop\\MovieShop.UnitTests\\MovieShop.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Satita\\.nuget\\packages\\coverlet.collector\\1.2.0\\coverlet.collector.1.2.0.nupkg.sha512",
+    "C:\\Users\\Satita\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.3\\microsoft.aspnetcore.cryptography.internal.3.1.3.nupkg.sha512",
+    "C:\\Users\\Satita\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.3\\microsoft.aspnetcore.cryptography.keyderivation.3.1.3.nupkg.sha512",
     "C:\\Users\\Satita\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\Satita\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Satita\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

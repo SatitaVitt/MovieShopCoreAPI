@@ -32,5 +32,11 @@ namespace MovieShop.Infrastructure.Services
             var movies = await _movieRepository.GetMoviesByCast(castId);
             return movies;
         }
+        public async Task<IEnumerable<Movie>> GetMoviesByGenre(int genreId)
+        {
+            var movies = await _movieRepository.GetMoviesByGenre(genreId);
+            return movies;
+        }
+
     }
 }

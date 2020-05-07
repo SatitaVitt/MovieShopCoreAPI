@@ -86,8 +86,6 @@ C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\ru\
 C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Satita\source\repos\MovieShop\MovieShop.API\obj\Debug\netcoreapp3.1\MovieShop.API.csproj.CoreCompileInputs.cache
-C:\Users\Satita\source\repos\MovieShop\MovieShop.API\obj\Debug\netcoreapp3.1\MovieShop.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Satita\source\repos\MovieShop\MovieShop.API\obj\Debug\netcoreapp3.1\MovieShop.API.csproj.CopyComplete
 C:\Users\Satita\source\repos\MovieShop\MovieShop.API\obj\Debug\netcoreapp3.1\MovieShop.API.dll
 C:\Users\Satita\source\repos\MovieShop\MovieShop.API\obj\Debug\netcoreapp3.1\MovieShop.API.pdb
@@ -127,3 +125,14 @@ C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\run
 C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\MovieShop.Core.pdb
 C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\MovieShop.Infrastructure.pdb
+C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Satita\source\repos\MovieShop\MovieShop.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Satita\source\repos\MovieShop\MovieShop.API\obj\Debug\netcoreapp3.1\MovieShop.API.csproj.CoreCompileInputs.cache
+C:\Users\Satita\source\repos\MovieShop\MovieShop.API\obj\Debug\netcoreapp3.1\MovieShop.API.MvcApplicationPartsAssemblyInfo.cache

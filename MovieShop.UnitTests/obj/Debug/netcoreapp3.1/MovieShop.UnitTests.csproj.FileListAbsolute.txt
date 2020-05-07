@@ -127,3 +127,5 @@ C:\Users\Satita\source\repos\MovieShop\MovieShop.UnitTests\bin\Debug\netcoreapp3
 C:\Users\Satita\source\repos\MovieShop\MovieShop.UnitTests\bin\Debug\netcoreapp3.1\MovieShop.Infrastructure.dll
 C:\Users\Satita\source\repos\MovieShop\MovieShop.UnitTests\bin\Debug\netcoreapp3.1\MovieShop.Core.pdb
 C:\Users\Satita\source\repos\MovieShop\MovieShop.UnitTests\bin\Debug\netcoreapp3.1\MovieShop.Infrastructure.pdb
+C:\Users\Satita\source\repos\MovieShop\MovieShop.UnitTests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Satita\source\repos\MovieShop\MovieShop.UnitTests\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
