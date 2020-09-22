@@ -14,7 +14,7 @@ and backend MovieShop (implemented with .NET MVC)
   
   Appsetting.json : that contains connection string and token settings
   
-  startip.cs file : 
+  startip.cs file : register all the repositories and services used in this project
   
 ## Core : 
   API Models (both Request models and Response models)
