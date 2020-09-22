@@ -6,12 +6,15 @@ and backend MovieShop (implemented with .NET MVC)
 
     this is also located in another repo of my github account, named MovieShop
 
-## Features: using .NET Core
+## Features : using .NET Core
+## Language : C#
 
 ## API : 
-  ### Controllers
-  ### Appsetting.json : that contains connection string and token settings
-  ### startip.cs file : 
+  Controllers
+  
+  Appsetting.json : that contains connection string and token settings
+  
+  startip.cs file : 
   
 ## Core : 
   API Models (both Request models and Response models)
