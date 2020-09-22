@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MovieShop.Core.ApiModels
+namespace MovieShop.Core.ApiModels.Request
 {
     public class LoginRequestModel
     {

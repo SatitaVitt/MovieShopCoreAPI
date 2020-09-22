@@ -19,7 +19,7 @@ namespace MovieShop.API.Controllers
         }
 
         [HttpGet]
-        [Route("")]
+        [Route("top")]
         public async Task<IActionResult> GetTopGrossingMovies()
         {
             var movies = await _movieService.GetTopGrossingMovies();
@@ -57,6 +57,13 @@ namespace MovieShop.API.Controllers
                 : Request.CreateResponse(HttpStatusCode.NotFound, "No Movies were found");
             return ResponseMessage(response);
             */
+        }
+
+        [HttpGet]
+        [Route("")]
+        public async Task<IActionResult> GetMovieByPagination([FromQuery] int pageSize = 20, [FromQuery] int pageIndex = 1, string title = ""){
+            var movies = await _movieService.GetMovieByPagination(pageSize, pageIndex, title);
+            return DayOfWeek(movies);
         }
     }
 }

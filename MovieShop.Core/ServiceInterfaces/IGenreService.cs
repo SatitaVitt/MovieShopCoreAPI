@@ -9,5 +9,6 @@ namespace MovieShop.Core.ServiceInterfaces
     public interface IGenreService
     {
         Task<IEnumerable<Genre>> GetAllGenres();
+        Task<IEnumerable<Genre>> GetGenresByMovieId(int movieId);
     }
 }

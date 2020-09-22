@@ -21,5 +21,9 @@ namespace MovieShop.Infrastructure.Services
             var genres = await _genreRepository.ListAllAsync();
             return genres.OrderBy(g => g.Name);
         }
+        public async Task<IEnumerable<Genre>> GetGenresByMovieId(int movieId)
+        {
+            return await _genreRepository.GetGenresByMovieId(movieId);
+        }
     }
 }

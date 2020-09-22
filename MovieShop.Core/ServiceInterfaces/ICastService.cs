@@ -9,5 +9,7 @@ namespace MovieShop.Core.ServiceInterfaces
     public interface ICastService
     {
         Task<Cast> GetCastById(int id);
+        Task<IEnumerable<Object>> GetCastsForMovie(int movieId);
+
     }
 }

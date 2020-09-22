@@ -16,6 +16,27 @@ namespace MovieShop.Infrastructure.Repositories
         {
 
         }
+        public override async Task<Movie> GetByIdAsync(int id)
+        {
+            var movie = await _dbContext.Movies.Where(m=>m.Id == id)
+                        .Include(m => m.MovieCasts).ThenInclude(mc => mc.Cast)
+                        .Include(m => m.MovieGenres)
+                        .ThenInclude(mg => mg.Genre)
+                        .FirstOrDefaultAsync();
+            //var movie = await _dbContext.Set<Movie>().Where(m=>m.Id==id)
+            //                //.Include(m=>m.MovieGenres).ThenInclude(mg=>mg.Genre)
+            //                //.Include(m=>m.MovieCasts).ThenInclude(mc=>mc.Cast)
+            //                .FirstOrDefaultAsync();
+            if (movie == null) return null;
+            var movieRating = await _dbContext.Reviews.Where(r => r.MovieId == id)
+                                .AverageAsync(r=>r.Rating);
+            if (movieRating > 0) movie.Rating = movieRating;
+            return movie;
+        }
+        public Task<IEnumerable<Review>> GetMovieReviews(int id)
+        {
+            throw new NotImplementedException();
+        }
 
         public async Task<IEnumerable<Movie>> GetMoviesByCast(int castId)
         {
@@ -31,6 +52,18 @@ namespace MovieShop.Infrastructure.Repositories
         public async Task<IEnumerable<Movie>> GetMoviesByGenre(int genreId)
         {
             var movies = await _dbContext.MovieGenres.Where(mc => mc.GenreId == genreId).Include(c => c.Movie).Select(m => m.Movie).ToListAsync();
+            return movies;
+        }
+
+        public async Task<IEnumerable<Movie>> GetMoviesByTitle(string title, int pageIndex)
+        {
+            var movies = await _dbContext.Movies.Where(m => m.Title.StartsWith(title)).OrderBy(m => m.Title).Skip(20 * pageIndex).Take(20).ToListAsync();
+            return movies;
+        }
+
+        public async Task<IEnumerable<Movie>> GetTopRatedMovies()
+        {
+            var movies = await _dbContext.Movies.OrderByDescending(m => m.Reviews.Average(r => r.Rating)).Take(50).ToListAsync();
             return movies;
         }
 

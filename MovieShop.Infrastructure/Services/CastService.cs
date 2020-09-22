@@ -21,5 +21,10 @@ namespace MovieShop.Infrastructure.Services
             var cast = await _castRepository.GetByIdAsync(id);
             return cast;
         }
+
+        public async Task<IEnumerable<Object>> GetCastsForMovie(int movieId)
+        {
+            return await _castRepository.GetCastsForMovie(movieId);
+        }
     }
 }

@@ -18,9 +18,9 @@ namespace MovieShop.Core.RepositoryInterfaces
         Task<T> UpdateAsync(T entity);
         Task DeleteAsync(T entity);
 
-        /*Task<PaginatedList<T>> GetPagedData(int pageIndex, int pageSize,
+        Task<PaginatedList<T>> GetPagedData(int pageIndex, int pageSize,
                                       Func<IQueryable<T>, IOrderedQueryable<T>> orderedQuery = null,
                                       Expression<Func<T, bool>> filter = null);
-        */
+        
     }
 }

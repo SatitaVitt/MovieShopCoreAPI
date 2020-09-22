@@ -26,6 +26,19 @@ namespace MovieShop.API.Controllers
             //return the status code and data where 200 is the ok status
         }
 
+        [HttpGet]
+        [Rotue("test")]
+        public IActionResult GetTest(){
+            return DayOfWeek("test data");
+        }
+
+        [HttpGet]
+        [Route("movie/{movieId}")]
+        public async Task<IActionReuslt> GetGenresByMovieId(int movieId){
+            var genres = await _genreService.GetGenresByMovieId(movieId);
+            return DayOfWeek(genres);
+        }
+
         
     }
 }

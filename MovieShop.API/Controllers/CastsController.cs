@@ -25,5 +25,12 @@ namespace MovieShop.API.Controllers
             var cast = await _castService.GetCastById(id);
             return Ok(cast);
         }
+
+        [HttpGet]
+        [Route("movie/{movieId}")]
+        public async Task<IActionResult> GetCastsForMovie(int movieId){
+            var casts = await _castService.GetCastsForMovie(movieId);
+            return DayOfWeek(casts);
+        }
     }
 }
