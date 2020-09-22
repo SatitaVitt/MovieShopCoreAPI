@@ -39,12 +39,20 @@ namespace MovieShop.API
             services.AddDbContext<MovieShopDbContext>(
                 options => options.UseSqlServer
                 (Configuration.GetConnectionString("MovieShopDbConnection")));
+            
+            services.AddAutoMapper(typeof(Startup), typeof(MoviesMappingProfile));
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
             //register repositories
             services.AddScoped<IAsyncRepository<Genre>, EfRepository<Genre>>();
             services.AddScoped<IMovieRepository, MovieRepository>();
             services.AddScoped<IAsyncRepository<Cast>, EfRepository<Cast>>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IPurchaseRepository, PurchaseRepository>();
+            services.AddScoped<IFavoriteRepository, FavoriteRepository>();
+            services.AddScoped<IAsyncRepository<Review>, EfRepository<Review>>();
+            services.AddScoped<ICastRepository, CastRepository>();
+            services.AddScoped<IGenreRepository, GenreRepository>();
 
             //register services
             services.AddScoped<IGenreService, GenreService>();
@@ -52,6 +60,7 @@ namespace MovieShop.API
             services.AddScoped<ICastService, CastService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ICryptoService, CryptoService>();
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
             //services.AddAutoMapper<typeof(Startup), typeof(MoviesMappingProfile));
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -84,12 +93,16 @@ namespace MovieShop.API
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                //app.UseDeveloperExceptionPage();
+                app.UseExceptionMiddleware();
             }
 
             app.UseCors(builder =>
             {
-                builder.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+                builder.WithOrigins("http://localhost:4200")
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowCredentials();
             });
 
             app.UseHttpsRedirection();
